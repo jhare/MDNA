@@ -1,0 +1,252 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "mdna"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "mdna"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.XML"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.ArcMap"
+                    AssemblyName = "ESRI.ArcGIS.ArcMap"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.ArcMap.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Carto"
+                    AssemblyName = "ESRI.ArcGIS.Carto"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Carto.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Editor"
+                    AssemblyName = "ESRI.ArcGIS.Editor"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Editor.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Framework"
+                    AssemblyName = "ESRI.ArcGIS.Framework"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Framework.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Geodatabase"
+                    AssemblyName = "ESRI.ArcGIS.Geodatabase"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Geodatabase.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.System"
+                    AssemblyName = "ESRI.ArcGIS.System"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.System.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.SystemUI"
+                    AssemblyName = "ESRI.ArcGIS.SystemUI"
+                    HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.SystemUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "mock-assembly"
+                    AssemblyName = "mock-assembly"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\mock-assembly.dll"
+                />
+                <Reference
+                    Name = "nonamespace-assembly"
+                    AssemblyName = "nonamespace-assembly"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nonamespace-assembly.dll"
+                />
+                <Reference
+                    Name = "notestfixtures-assembly"
+                    AssemblyName = "notestfixtures-assembly"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\notestfixtures-assembly.dll"
+                />
+                <Reference
+                    Name = "nunit.core"
+                    AssemblyName = "nunit.core"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.core.dll"
+                />
+                <Reference
+                    Name = "nunit.core.extensions"
+                    AssemblyName = "nunit.core.extensions"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.core.extensions.dll"
+                />
+                <Reference
+                    Name = "nunit.extensions.tests"
+                    AssemblyName = "nunit.extensions.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.extensions.tests.dll"
+                />
+                <Reference
+                    Name = "nunit.framework"
+                    AssemblyName = "nunit.framework"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.framework.dll"
+                />
+                <Reference
+                    Name = "nunit.framework.tests"
+                    AssemblyName = "nunit.framework.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.framework.tests.dll"
+                />
+                <Reference
+                    Name = "nunit.mocks"
+                    AssemblyName = "nunit.mocks"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.mocks.dll"
+                />
+                <Reference
+                    Name = "nunit.mocks.tests"
+                    AssemblyName = "nunit.mocks.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.mocks.tests.dll"
+                />
+                <Reference
+                    Name = "nunit.uikit"
+                    AssemblyName = "nunit.uikit"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.uikit.dll"
+                />
+                <Reference
+                    Name = "nunit.uikit.tests"
+                    AssemblyName = "nunit.uikit.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.uikit.tests.dll"
+                />
+                <Reference
+                    Name = "nunit.util"
+                    AssemblyName = "nunit.util"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.util.dll"
+                />
+                <Reference
+                    Name = "nunit.util.tests"
+                    AssemblyName = "nunit.util.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit.util.tests.dll"
+                />
+                <Reference
+                    Name = "nunit-console.tests"
+                    AssemblyName = "nunit-console.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit-console.tests.dll"
+                />
+                <Reference
+                    Name = "nunit-console-runner"
+                    AssemblyName = "nunit-console-runner"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit-console-runner.dll"
+                />
+                <Reference
+                    Name = "nunit-gui.tests"
+                    AssemblyName = "nunit-gui.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit-gui.tests.dll"
+                />
+                <Reference
+                    Name = "nunit-gui-runner"
+                    AssemblyName = "nunit-gui-runner"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit-gui-runner.dll"
+                />
+                <Reference
+                    Name = "nunit-server.tests"
+                    AssemblyName = "nunit-server.tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit-server.tests.dll"
+                />
+                <Reference
+                    Name = "nunit-test-server"
+                    AssemblyName = "nunit-test-server"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\nunit-test-server.dll"
+                />
+                <Reference
+                    Name = "test-utilities"
+                    AssemblyName = "test-utilities"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\test-utilities.dll"
+                />
+                <Reference
+                    Name = "timing-tests"
+                    AssemblyName = "timing-tests"
+                    HintPath = "NUnit-2.2.9-net-1.1\bin\timing-tests.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "core.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

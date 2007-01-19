@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdna", "mdna.csproj", "{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Debug.ActiveCfg = Debug|.NET
+		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Debug.Build.0 = Debug|.NET
+		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Release.ActiveCfg = Release|.NET
+		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
