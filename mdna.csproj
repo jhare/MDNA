@@ -240,8 +240,9 @@
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
-                <Folder RelPath = "source\" />
-                <Folder RelPath = "tests\" />
+                <Folder RelPath = "Source\Core\" />
+                <Folder RelPath = "Source\Database\" />
+                <Folder RelPath = "Test\" />
             </Include>
         </Files>
     </CSHARP>
