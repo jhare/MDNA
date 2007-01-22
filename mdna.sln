@@ -14,6 +14,10 @@ Global
 		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Release.ActiveCfg = Release|.NET
 		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Release.Build.0 = Release|.NET
 	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		oldcpp\Server.cpp = oldcpp\Server.cpp
+		oldcpp\Server.h = oldcpp\Server.h
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 	EndGlobalSection
 	GlobalSection(ExtensibilityAddIns) = postSolution
