@@ -241,12 +241,10 @@
                     BuildAction = "Compile"
                 />
                 <File
-                    RelPath = "Source\Core.cs"
+                    RelPath = "Core.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
-                <Folder RelPath = "Source\Core\" />
-                <Folder RelPath = "Source\Database\" />
                 <File
                     RelPath = "Test\CoreTest.cs"
                     SubType = "Code"
