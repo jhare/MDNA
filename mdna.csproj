@@ -236,17 +236,17 @@
         <Files>
             <Include>
                 <File
+                    RelPath = "App.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
                     RelPath = "AssemblyInfo.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
                 <File
-                    RelPath = "Core.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Test\CoreTest.cs"
+                    RelPath = "Test\AppTest.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
