@@ -1,17 +1,15 @@
 using System;
 using NUnit.Framework;
 
-using mdna.Source;
 namespace mdna.Test
 {
 	/// <summary>
 	/// Unit tests for application core.
 	/// </summary>
 	[TestFixture]
-	public class CoreTest
+	public class AppTest
 	{
-		mdna.Source.Core.Core core1;
-		public CoreTest()
+		public AppTest()
 		{
 			//
 			// TODO: Add constructor logic here
@@ -19,7 +17,7 @@ namespace mdna.Test
 		}
 
 		[Test]
-		public void testCore()
+		public void testApp()
 		{
 			Assert.AreEqual( 4, 1 ); 
 		}
