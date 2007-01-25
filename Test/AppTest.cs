@@ -16,10 +16,6 @@ namespace mdna.Test
 			//
 		}
 
-		[Test]
-		public void testApp()
-		{
-			Assert.AreEqual( 4, 1 ); 
-		}
+
 	}
 }

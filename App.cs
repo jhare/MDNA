@@ -9,7 +9,6 @@ namespace mdna
 	{
 		public App()
 		{
-			
 		}
 	}
 }
