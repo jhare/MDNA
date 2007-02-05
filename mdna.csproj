@@ -433,6 +433,11 @@
                     HintPath = "..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Utility.dll"
                     AssemblyFolderKey = "hklm\dn\arcgis desktop"
                 />
+                <Reference
+                    Name = "mdnaSettings"
+                    Project = "{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
             </References>
         </Build>
         <Files>
