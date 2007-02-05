@@ -15,7 +15,5 @@ namespace mdna.Test
 			// TODO: Add constructor logic here
 			//
 		}
-
-
 	}
 }

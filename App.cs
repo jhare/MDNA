@@ -1,4 +1,6 @@
 using System;
+using Oracle.DataAccess.Client;
+using Oracle.DataAccess.Types;
 
 namespace mdna
 {
