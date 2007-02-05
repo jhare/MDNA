@@ -191,7 +191,7 @@
                     BuildAction = "Compile"
                 />
                 <File
-                    RelPath = "Class1.cs"
+                    RelPath = "SettingsFile.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
