@@ -3,6 +3,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdna", "mdna.csproj", "{3EE
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdnaSettings", "mdnaSettings\mdnaSettings.csproj", "{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfiguration) = preSolution
 		Debug = Debug
@@ -13,6 +17,10 @@ Global
 		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Debug.Build.0 = Debug|.NET
 		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Release.ActiveCfg = Release|.NET
 		{3EE2898C-CAAE-4A2A-8C2B-F05C404F14B5}.Release.Build.0 = Release|.NET
+		{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}.Debug.ActiveCfg = Debug|.NET
+		{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}.Debug.Build.0 = Debug|.NET
+		{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}.Release.ActiveCfg = Release|.NET
+		{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}.Release.Build.0 = Release|.NET
 	EndGlobalSection
 	GlobalSection(SolutionItems) = postSolution
 		oldcpp\Server.cpp = oldcpp\Server.cpp
