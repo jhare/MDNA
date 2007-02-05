@@ -195,7 +195,11 @@
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
-                <Folder RelPath = "Tests\" />
+                <File
+                    RelPath = "Tests\SettingsFileTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
             </Include>
         </Files>
     </CSHARP>
