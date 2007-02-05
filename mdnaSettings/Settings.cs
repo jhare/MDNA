@@ -5,13 +5,10 @@ namespace mdnaSettings
 	/// <summary>
 	/// Summary description for Settings.
 	/// </summary>
-	public class Settings
+	public struct Settings
 	{
-		public Settings()
-		{
-			//
-			// TODO: Add constructor logic here
-			//
-		}
+		#region Data Members
+		
+		#endregion
 	}
 }

@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
 
+
 namespace mdnaSettings.Test
 {
 	/// <summary>
@@ -28,14 +29,14 @@ namespace mdnaSettings.Test
 			tempFilePath = "./testdata/temp.xml";
 		}
 
-		[TestFixtureSetup]
-		public void Setup
+		[TestFixtureSetUp]
+		public void SetUp()
 		{
-			correctTemplate.Load( correctFilePath );
+		
 		}
 
-		[TestFixtureTeardown]
-		public void TearDown
+		[TestFixtureTearDown]
+		public void TearDown()
 		{
 
 		}
