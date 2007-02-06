@@ -9,21 +9,52 @@ namespace mdnaSettings
 	public class Settings
 	{
 		#region Data Members
-		private int m_settingsCount;
 		internal Hashtable m_settings;
+		string m_category;
 		#endregion
 
+		#region Constructors
 		public Settings()
 		{
 			m_settings = new Hashtable();
+			m_category = "";
 		}
+
+		public Settings( string category )
+		{
+			m_settings = new Hashtable();
+			m_category = category;
+		}
+
+		#endregion
+
+		#region Properties
+
+		public string Category
+		{
+			get
+			{
+				return( m_category );
+			}
+			set
+			{
+				m_category = value;
+			}
+		}
+
+
+		public int Count
+		{
+			get
+			{
+				return( m_settings.Count );
+			}
+		}
+
+
+		#endregion
 
 		#region Member Functions
-		public int Count()
-		{
-			return( m_settings.Count );
-		}
-
 		// This function is essentially what I want to hide from the
 		// would-be user of the Hashtable. There are a few reasons:
 		// 1) No one likes to see casts.
@@ -43,21 +74,26 @@ namespace mdnaSettings
 			}
 		}
 
+
 		public void Clear()
 		{
             m_settings.Clear();		
 		}
+
 
 		public void Add(string key, string value)
 		{
 			m_settings.Add( key, value );
 		}
 
+
 		public void Remove( string key )
 		{
 			m_settings.Remove( key );
 		}
 
+
 		#endregion
+		
 	}
 }

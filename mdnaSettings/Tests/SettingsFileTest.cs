@@ -23,10 +23,10 @@ namespace mdnaSettings.Tests
 			
 		}
 
+
 		#region Helper Functions
 		public bool FilesAreEqual( string path1, string path2 )
 		{
-			// Wow, this couldn't have been more simple.
 			StreamReader stream1 = new StreamReader( path1 );
 			StreamReader stream2 = new StreamReader( path2 );
 
@@ -69,6 +69,19 @@ namespace mdnaSettings.Tests
 			Assert.AreEqual( true, FilesAreEqual( filePath, baseXMLFilePath ) );
 		}
 
+
+		[Test]
+		public void Create_UseTheActualFunction()
+		{
+			string filePath = "Create_UseTheActualFunction.xml";
+			mdnaSettings.SettingsFile temp = new mdnaSettings.SettingsFile();
+
+			temp.Create( filePath );
+
+			Assert.AreEqual( true, FilesAreEqual( filePath, baseXMLFilePath ) );
+		}
+
+
 		[Test]
 		public void Save_WithAValidSettingsObject()
 		{
@@ -85,6 +98,7 @@ namespace mdnaSettings.Tests
 			Assert.AreEqual( true, saveResult );
 			Assert.AreEqual( true, FilesAreEqual( filePath, XMLFileWithValidEntries ) );           
 		}
+
 
 		#endregion
 	}
