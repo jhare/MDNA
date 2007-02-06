@@ -10,7 +10,7 @@ namespace mdnaSettings
 	{
 		#region Data Members
 		private int m_settingsCount;
-		private Hashtable m_settings;
+		internal Hashtable m_settings;
 		#endregion
 
 		public Settings()

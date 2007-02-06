@@ -14,6 +14,7 @@ namespace mdnaSettings
 		string m_fileName;
 		#endregion
 
+		#region Constructors
 		public SettingsFile()
 		{
 			m_fileName = "";
@@ -41,5 +42,25 @@ namespace mdnaSettings
 			}
 
 		}
+		#endregion
+
+		#region Member Functions
+		public bool Save( mdnaSettings.Settings settings )
+		{
+			// The hash table in the Settings class is set to "internal"
+			// so that things within this assembly (dll) can access it easily.
+			// This comes in handy at this point, where we need foreach capability
+			// to save the settings, but don't want to grant it to the users of
+			// the class. These users would be anything outside of the mdnaSettings
+			// project, such as the Preferences form, etc, etc.
+			//
+			// This does NOT break the data-hiding paradigm this way, since we are
+			// simply and explicitly granting selective access to a member and
+			// denying it from others.
+
+			
+			return( false );
+		}
+		#endregion
 	}
 }

@@ -15,6 +15,7 @@ namespace mdnaSettings.Tests
 	{
 		#region Data Members
 		private string baseXMLFilePath;
+		private string XMLFileWithValidEntries;
 		#endregion
 
 		public SettingsFileTest()
@@ -48,6 +49,7 @@ namespace mdnaSettings.Tests
 		public void SetUp()
 		{
 			baseXMLFilePath = "BaseSettingsFile.xml";
+			XMLFileWithValidEntries = "WithValidEntries.xml";
 		}
 
 		[TestFixtureTearDown]
@@ -61,11 +63,29 @@ namespace mdnaSettings.Tests
 		[Test]
 		public void Create_SetUpABaseXMLFile()
 		{
-			string filePath = "temp.xml";
+			string filePath = "Create_SetUpABaseXMLFile.xml";
 			mdnaSettings.SettingsFile temp = new mdnaSettings.SettingsFile( filePath );
 		
 			Assert.AreEqual( true, FilesAreEqual( filePath, baseXMLFilePath ) );
 		}
+
+		[Test]
+		public void Save_WithAValidSettingsObject()
+		{
+			bool saveResult;
+			string filePath = "Save_WithAValidSettingsObject.xml";
+			mdnaSettings.SettingsFile file = new mdnaSettings.SettingsFile( filePath );
+			mdnaSettings.Settings settings = new mdnaSettings.Settings();
+
+			settings.Add( "foo", "bar" );
+			settings.Add( "laverne", "shirley" );
+
+			saveResult = file.Save( settings );
+
+			Assert.AreEqual( true, saveResult );
+			Assert.AreEqual( true, FilesAreEqual( filePath, XMLFileWithValidEntries ) );           
+		}
+
 		#endregion
 	}
 }
