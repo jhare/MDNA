@@ -201,12 +201,22 @@
                     BuildAction = "Compile"
                 />
                 <File
+                    RelPath = "Variables.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
                     RelPath = "Tests\SettingsFileTest.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
                 <File
                     RelPath = "Tests\SettingsTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tests\VariablesTest.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
