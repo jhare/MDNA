@@ -1,5 +1,6 @@
 using System;
 using System.Xml;
+using System.IO;
 
 namespace mdnaSettings
 {
@@ -9,11 +10,36 @@ namespace mdnaSettings
 	/// </summary>
 	public class SettingsFile
 	{
+		#region Data Members
+		string m_fileName;
+		#endregion
+
 		public SettingsFile()
 		{
-			//
-			// TODO: Add constructor logic here
-			//
+			m_fileName = "";
+		}
+
+		public SettingsFile( string fileName)
+		{
+			// If the file isn't there, create it, otherwise just
+			// set the name for internal reference.
+			m_fileName = fileName;
+			if( File.Exists( m_fileName ) == false )
+			{
+				XmlTextWriter xml = new XmlTextWriter( fileName, System.Text.Encoding.UTF8 );
+
+				xml.Formatting = System.Xml.Formatting.Indented;
+
+				xml.WriteStartDocument();
+
+				xml.WriteStartElement( "mdna" );
+				xml.WriteEndElement();
+
+				xml.WriteEndDocument();
+
+				xml.Close();
+			}
+
 		}
 	}
 }

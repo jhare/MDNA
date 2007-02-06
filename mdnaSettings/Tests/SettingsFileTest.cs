@@ -1,5 +1,7 @@
 using System;
 using NUnit.Framework;
+using System.IO;
+using System.Xml;
 
 
 namespace mdnaSettings.Tests
@@ -7,32 +9,45 @@ namespace mdnaSettings.Tests
 	/// <summary>
 	/// Summary description for SettingsFileTest.
 	/// </summary>
-	//[TestFixture]
+	[TestFixture]
+	[Category("Settings")]
 	public class SettingsFileTest
 	{
 		#region Data Members
-		private mdnaSettings.SettingsFile m_file;
-		private mdnaSettings.SettingsFile m_correctTemplate;
-
-		private string m_correctFilePath;
-		private string m_tempFilePath;
-
-		private mdnaSettings.Settings m_correct;
-		private mdnaSettings.Settings m_temp;
+		private string baseXMLFilePath;
 		#endregion
 
-		// Set up things that AREN'T part of the initialization
-		// having to do with test data.
 		public SettingsFileTest()
 		{
 			
 		}
 
+		#region Helper Functions
+		public bool FilesAreEqual( string path1, string path2 )
+		{
+			// Wow, this couldn't have been more simple.
+			StreamReader stream1 = new StreamReader( path1 );
+			StreamReader stream2 = new StreamReader( path2 );
+
+			string file1 = stream1.ReadToEnd();
+			string file2 = stream2.ReadToEnd();
+
+			if( file1 == file2 )
+			{
+				return( true );
+			}
+			else
+			{
+				return( false );
+			}
+		}
+		#endregion
+
+		#region SetUp and TearDown
 		[TestFixtureSetUp]
 		public void SetUp()
 		{
-			m_correctFilePath = "./testdata/mdna.xml";
-			m_tempFilePath = "./testdata/temp.xml";
+			baseXMLFilePath = "BaseSettingsFile.xml";
 		}
 
 		[TestFixtureTearDown]
@@ -40,41 +55,17 @@ namespace mdnaSettings.Tests
 		{
 
 		}
+		#endregion
 
+		#region Tests
 		[Test]
-		public void LoadFile()
+		public void Create_SetUpABaseXMLFile()
 		{
-			Assert.Fail( "Test Not Implemented" );			
+			string filePath = "temp.xml";
+			mdnaSettings.SettingsFile temp = new mdnaSettings.SettingsFile( filePath );
+		
+			Assert.AreEqual( true, FilesAreEqual( filePath, baseXMLFilePath ) );
 		}
-
-		[Test]
-		public void SaveFile()
-		{
-			Assert.Fail( "Test Not Implemented" );
-		}
-
-		[Test]
-		public void WriteSetting()
-		{
-			Assert.Fail( "Test Not Implemented" );
-		}
-
-		[Test]
-		public void DeleteSetting()
-		{
-			Assert.Fail( "Test Not Implemented" );
-		}
-
-		[Test]
-		public void WriteVar()
-		{
-			Assert.Fail( "Test Not Implemented" );
-		}
-
-		[Test]
-		public void DeleteVar()
-		{
-			Assert.Fail( "Test Not Implemented" );
-		}
+		#endregion
 	}
 }

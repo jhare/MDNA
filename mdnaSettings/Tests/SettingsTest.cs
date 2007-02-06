@@ -7,6 +7,7 @@ namespace mdnaSettings.Tests
 	/// Summary description for SettingsTest.
 	/// </summary>
 	[TestFixture]
+	[Category("Settings")]
 	public class SettingsTest
 	{
 		#region Data Members
