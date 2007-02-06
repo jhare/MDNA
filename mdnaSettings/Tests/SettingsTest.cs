@@ -12,15 +12,9 @@ namespace mdnaSettings.Tests
 		#region Data Members
 		// For testing two settings
 		private int m_numTestSettings;
+
 		private string m_settingName;
-		private string m_settingCompany;
-		private string m_settingSalary;
-
 		private string m_settingNameValue;
-		private string m_settingCompanyValue;
-		private string m_settingSalaryValue;
-
-        mdnaSettings.Settings settings;
 
 		#endregion
 
@@ -30,21 +24,14 @@ namespace mdnaSettings.Tests
 			
 		}
 
-
 		#region SetUp and TearDown
 		[TestFixtureSetUp]
 		public void SetUp()
 		{
-			m_numTestSettings = 3;
+			m_numTestSettings = 1;
 			m_settingName = "Name";
-			m_settingCompany = "Company";
-			m_settingSalary = "Salary";
-
 			m_settingNameValue = "Joe";
-			m_settingCompanyValue = "USGS";
-			m_settingSalaryValue = "1,000,000";
-		
-			settings = new Settings();
+			
 		}
 
 		[TestFixtureTearDown]
@@ -57,11 +44,70 @@ namespace mdnaSettings.Tests
 		#region Tests
 		
 		[Test]
-		public void State_ObjectIsInitiallyEmpty()
+		public void Count_NewObjectIsInitiallyEmpty()
 		{
-			
+			// It would be nice to check for null here, but it is unnecessary.
+			mdnaSettings.Settings settings = new mdnaSettings.Settings();
+			Assert.AreEqual( 0, settings.Count() );
 		}
-		
+
+		[Test]
+		public void Get_NewObjectReturnsEmptySettings()
+		{
+			mdnaSettings.Settings settings = new mdnaSettings.Settings();
+			Assert.AreEqual( "", settings.Get("foo") );
+		}
+
+		[Test]
+		public void Add_InsertNewSetting()
+		{
+			mdnaSettings.Settings settings = new mdnaSettings.Settings();
+
+			settings.Clear();
+			Assert.AreEqual( 0, settings.Count() );
+			
+			settings.Add( m_settingName, m_settingNameValue );
+
+			Assert.AreEqual( settings.Count(), 1 );
+			Assert.AreEqual( m_settingNameValue, settings.Get( m_settingName ) );
+		}
+
+		[Test]
+		public void Remove_ClearSettingsAddAnObjectThenRemoveIt( )
+		{
+			mdnaSettings.Settings settings = new mdnaSettings.Settings();
+
+			settings.Clear();
+			Assert.AreEqual( 0, settings.Count() );
+
+			settings.Add( m_settingName, m_settingNameValue );
+			Assert.AreEqual( 1, settings.Count() );
+
+			settings.Remove( m_settingName );
+			Assert.AreEqual( 0, settings.Count() );
+
+			Assert.AreEqual( "", settings.Get( m_settingName ) );
+		}
+
+		[Test]
+		public void Clear_AddManyKeysThenClear()
+		{
+			mdnaSettings.Settings settings = new mdnaSettings.Settings();
+
+			Assert.AreEqual( 0, settings.Count() );
+
+			settings.Add( "foo", "bar" );
+			settings.Add( "peanut butter", "jelly" );
+			settings.Add( "laverne", "shirley" );
+
+			Assert.AreEqual( 3, settings.Count() );
+			
+			settings.Clear();
+
+			Assert.AreEqual( 0, settings.Count() );
+		}
+
+
 		#endregion
 
 	}

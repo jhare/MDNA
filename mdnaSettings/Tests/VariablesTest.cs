@@ -6,6 +6,7 @@ namespace mdnaSettings.Tests
 	/// <summary>
 	/// Summary description for VariablesTest.
 	/// </summary>
+	[TestFixture]
 	public class VariablesTest
 	{
 
@@ -45,6 +46,11 @@ namespace mdnaSettings.Tests
 		{
 
 		}
+		#endregion
+
+		#region Tests
+
+		
 		#endregion
 	}
 }
