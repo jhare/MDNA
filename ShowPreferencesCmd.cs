@@ -16,15 +16,36 @@ namespace mdna
 	/// </summary>
 	public class ShowPreferencesCmd : ICommand
 	{
+		// For the bitmap.
+		[DllImport("gdi32.dll")]
+		static extern bool DeleteObject(IntPtr hObject);
+
 		#region Data Members
 		private IApplication m_app;
 		private bool m_enabled;
+		private System.Drawing.Bitmap m_bitmap;
+		private IntPtr m_hBitmap;
 		#endregion
 
 		public ShowPreferencesCmd()
 		{
 			m_app = null;
 			m_enabled = false;
+
+			/*
+			m_bitmap = new System.Drawing.Bitmap(GetType().Assembly.GetManifestResourceStream("mdna.preferences.bmp"));
+			if (m_bitmap != null)
+			{
+				m_bitmap.MakeTransparent(m_bitmap.GetPixel(0,0));
+				m_hBitmap = m_bitmap.GetHbitmap();
+			}
+			*/
+		}
+
+		~ShowPreferencesCmd()
+		{
+			if (m_hBitmap.ToInt32() != 0)
+				DeleteObject(m_hBitmap);
 		}
 
 		#region ICommand Members
@@ -47,7 +68,7 @@ namespace mdna
 		{
 			get
 			{
-				return 0;
+				return m_hBitmap.ToInt32();
 			}
 		}
 

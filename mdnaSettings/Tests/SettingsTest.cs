@@ -12,7 +12,6 @@ namespace mdnaSettings.Tests
 	{
 		#region Data Members
 		// For testing two settings
-		private int m_numTestSettings;
 		private string m_settingName;
 		private string m_settingNameValue;
 
@@ -28,7 +27,6 @@ namespace mdnaSettings.Tests
 		[TestFixtureSetUp]
 		public void SetUp()
 		{
-			m_numTestSettings = 1;
 			m_settingName = "Name";
 			m_settingNameValue = "Joe";
 			

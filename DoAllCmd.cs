@@ -18,15 +18,39 @@ namespace mdna
 	/// </summary>
 	public class DoAllCmd : ICommand
 	{
+		// For the bitmap.
+		[DllImport("gdi32.dll")]
+		static extern bool DeleteObject(IntPtr hObject);
+
 		#region Data Members
 		private IApplication m_app;
 		private bool m_enabled;
+		private System.Drawing.Bitmap m_bitmap;
+		private IntPtr m_hBitmap;
 		#endregion
 
 		public DoAllCmd()
 		{
 			m_app = null;
 			m_enabled = false;
+			
+			// Leaving this out until I can make an attractive bitmap. This may
+			// never happen, regardless of my skill, since ArcMap is very picky
+			// about those bitmaps.
+			/*
+			m_bitmap = new System.Drawing.Bitmap(GetType().Assembly.GetManifestResourceStream("mdna.DoAllIcon.bmp"));
+			if (m_bitmap != null)
+			{
+				m_bitmap.MakeTransparent(m_bitmap.GetPixel(0,0));
+				m_hBitmap = m_bitmap.GetHbitmap();
+			}
+			*/
+		}
+
+		~DoAllCmd()
+		{
+			if (m_hBitmap.ToInt32() != 0)
+				DeleteObject(m_hBitmap);
 		}
 
 
@@ -49,7 +73,7 @@ namespace mdna
 		{
 			get
 			{
-				return 0;
+				return m_hBitmap.ToInt32();
 			}
 		}
 
