@@ -181,6 +181,11 @@
                     HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.util.tests.dll"
                     AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
                 />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
             </References>
         </Build>
         <Files>

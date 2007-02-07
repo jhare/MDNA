@@ -3,6 +3,7 @@ using System.Xml;
 using System.Xml.XPath; // XPath pwns. Call your mom.
 using System.IO;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace mdnaSettings
 {
@@ -92,8 +93,10 @@ namespace mdnaSettings
 
 				// Get a reference to the exact same entry, if it exists.
 				XmlNode existingEntry;
+				//MessageBox.Show( "//" + settings.Category + "/[name='" + (string)de.Key + "']" );
 				XmlElement root = doc.DocumentElement;
-				existingEntry = root.SelectSingleNode( "/mdna/" + settings.Category + "[name='" + (string)de.Key + "']" );
+				existingEntry = root.SelectSingleNode( "//" + settings.Category + "[@name='" + (string)de.Key + "']" );
+
 				
 				// If it doesn't exist, just add it. Otherwise, replace it.
 				if( existingEntry == null )

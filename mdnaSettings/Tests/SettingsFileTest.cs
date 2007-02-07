@@ -2,6 +2,7 @@ using System;
 using NUnit.Framework;
 using System.IO;
 using System.Xml;
+using System.Windows.Forms;
 
 
 namespace mdnaSettings.Tests
@@ -27,20 +28,31 @@ namespace mdnaSettings.Tests
 		#region Helper Functions
 		public bool FilesAreEqual( string path1, string path2 )
 		{
-			StreamReader stream1 = new StreamReader( path1 );
-			StreamReader stream2 = new StreamReader( path2 );
-
-			string file1 = stream1.ReadToEnd();
-			string file2 = stream2.ReadToEnd();
-
-			if( file1 == file2 )
+			// If one of the files aren't there then shit happens.
+			try
 			{
-				return( true );
+				StreamReader stream1 = new StreamReader( path1 );
+				StreamReader stream2 = new StreamReader( path2 );
+
+				string file1 = stream1.ReadToEnd();
+				string file2 = stream2.ReadToEnd();
+
+				if( file1 == file2 )
+				{
+					return( true );
+				}
+				else
+				{
+					return( false );
+				}
+
 			}
-			else
+			catch( Exception ex )
 			{
+				MessageBox.Show( "Exception Caught: " + ex.Message );
 				return( false );
 			}
+
 		}
 		#endregion
 
@@ -90,6 +102,7 @@ namespace mdnaSettings.Tests
 			mdnaSettings.SettingsFile file = new mdnaSettings.SettingsFile( filePath );
 			mdnaSettings.Settings settings = new mdnaSettings.Settings();
 
+			settings.Category = "setting";
 			settings.Add( "foo", "bar" );
 			settings.Add( "laverne", "shirley" );
 
