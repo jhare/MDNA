@@ -112,6 +112,26 @@ namespace mdnaSettings.Tests
 			Assert.AreEqual( true, FilesAreEqual( filePath, XMLFileWithValidEntries ) );           
 		}
 
+		[Test]
+		public void Load_WithAValidXMLFile()
+		{
+			mdnaSettings.SettingsFile file = new mdnaSettings.SettingsFile( XMLFileWithValidEntries );
+			mdnaSettings.Settings actual; // A new instance should be returned by the method.
+			mdnaSettings.Settings expected = new mdnaSettings.Settings();
+
+			expected.Category = "setting";
+			expected.Add( "foo", "bar" );
+			expected.Add( "laverne", "shirley" );
+
+			actual = file.Load( "setting" );
+
+			// The actual values need to match the expected.
+			// This is dependent on the test file.\
+			Assert.AreEqual( expected.Category, actual.Category );
+			Assert.AreEqual( expected.Get("foo"), actual.Get("foo") );
+			Assert.AreEqual( expected.Get("laverne"), actual.Get("laverne") );
+		}
+
 
 		#endregion
 	}

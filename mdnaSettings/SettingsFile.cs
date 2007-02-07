@@ -114,6 +114,36 @@ namespace mdnaSettings
 			return( true );
 		}
 
+		public mdnaSettings.Settings Load( string category )
+		{
+			mdnaSettings.Settings result = new mdnaSettings.Settings();
+
+			XPathDocument doc = new XPathDocument( m_fileName );
+			XPathNavigator nav = doc.CreateNavigator();
+
+			// Get the expression compiled.
+			// We want all of the nodes in the category regardless of position or their attributes.
+			XPathExpression expr;
+			expr = nav.Compile( "//"+category ); 
+			XPathNodeIterator iter = nav.Select(expr);
+
+			result.Category = category;
+
+			try
+			{
+				while( iter.MoveNext() )
+				{
+					result.Add( iter.Current.GetAttribute( "name", "" ), iter.Current.GetAttribute( "value", "" ) );
+				}
+			}
+			catch( Exception ex )
+			{
+				MessageBox.Show( "Exception Caught: " + ex.Message );
+			}
+            
+			return( result );
+		}
+
 
 		#endregion
 	}
