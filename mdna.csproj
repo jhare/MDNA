@@ -37,7 +37,7 @@
                     NoWarn = ""
                     Optimize = "false"
                     OutputPath = "bin\Debug\"
-                    RegisterForComInterop = "false"
+                    RegisterForComInterop = "true"
                     RemoveIntegerChecks = "false"
                     TreatWarningsAsErrors = "false"
                     WarningLevel = "4"
@@ -449,6 +449,16 @@
                 />
                 <File
                     RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DoAllCmd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MDNAToolbar.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
