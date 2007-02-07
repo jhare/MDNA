@@ -473,6 +473,11 @@
                     BuildAction = "EmbeddedResource"
                 />
                 <File
+                    RelPath = "ShowPreferencesCmd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
                     RelPath = "Test\AppTest.cs"
                     SubType = "Code"
                     BuildAction = "Compile"

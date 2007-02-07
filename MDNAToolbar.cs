@@ -27,6 +27,10 @@ namespace mdna
 					itemDef.ID = "mdna.DoAllCmd";
 					itemDef.Group = false;
 					break;
+				case 1:
+					itemDef.ID = "mdna.ShowPreferencesCmd";
+					itemDef.Group = true;
+					break;
 			}
 		}
 
@@ -50,7 +54,7 @@ namespace mdna
 		{
 			get
 			{
-				return( 1 );
+				return( 2 );
 			}
 		}
 

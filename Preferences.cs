@@ -62,6 +62,7 @@ namespace mdna
 			this.cmdOK.Name = "cmdOK";
 			this.cmdOK.TabIndex = 0;
 			this.cmdOK.Text = "&OK";
+			this.cmdOK.Click += new System.EventHandler(this.cmdOK_Click);
 			// 
 			// cmdCancel
 			// 
@@ -82,5 +83,10 @@ namespace mdna
 
 		}
 		#endregion
+
+		private void cmdOK_Click(object sender, System.EventArgs e)
+		{
+			this.Hide();
+		}
 	}
 }

@@ -8,40 +8,38 @@ using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Framework;
 using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.SystemUI;
- 
+
 namespace mdna
 {
 	/// <summary>
-	/// This class implements the ICommand interface in order to offer
-	/// a "do all" command to the user that does all replacements and
-	/// addition of notation that it knows how to do at that moment.
+	/// Summary description for ShowPreferencesCmd.
 	/// </summary>
-	public class DoAllCmd : ICommand
+	public class ShowPreferencesCmd : ICommand
 	{
 		#region Data Members
 		private IApplication m_app;
 		private bool m_enabled;
 		#endregion
 
-		public DoAllCmd()
+		public ShowPreferencesCmd()
 		{
 			m_app = null;
 			m_enabled = false;
 		}
 
-
 		#region ICommand Members
 
 		public void OnClick()
 		{
-			MessageBox.Show( "Not yet implemented." );
+			mdna.Preferences preferencesWindow = new mdna.Preferences();
+			preferencesWindow.Show();
 		}
 
 		public string Message
 		{
 			get
 			{
-				return( "Perform all substitution operations." );
+				return( "Display the preferences dialog." );
 			}
 		}
 
@@ -70,7 +68,7 @@ namespace mdna
 		{
 			get
 			{
-				return( "Do All" );
+				return( "Preferences" );
 			}
 		}
 
@@ -78,7 +76,7 @@ namespace mdna
 		{
 			get
 			{
-				return( "This command replaces all replaceable elements in the map." );
+				return( "Display the preferences dialog." );
 			}
 		}
 
@@ -94,7 +92,7 @@ namespace mdna
 		{
 			get
 			{
-				return( "DoAll" );
+				return( "Preferences" );
 			}
 		}
 
