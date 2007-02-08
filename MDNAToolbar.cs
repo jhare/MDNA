@@ -28,6 +28,14 @@ namespace mdna
 					itemDef.Group = false;
 					break;
 				case 1:
+					itemDef.ID = "mdna.AdjustGridCmd";
+					itemDef.Group = true;
+					break;
+				case 2:
+					itemDef.ID = "mdna.CollarReplaceCmd";
+					itemDef.Group = false;
+					break;
+				case 3:
 					itemDef.ID = "mdna.ShowPreferencesCmd";
 					itemDef.Group = true;
 					break;
@@ -54,7 +62,7 @@ namespace mdna
 		{
 			get
 			{
-				return( 2 );
+				return( 4 );
 			}
 		}
 

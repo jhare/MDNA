@@ -59,6 +59,10 @@ namespace mdna
 		public void OnClick()
 		{
 			MessageBox.Show( "Not yet implemented." );
+
+			// Eventually, it will be as simple as just calling the same methods
+			// as the other two commands. Something may need to be done so that this
+			// is changed only in one place.
 		}
 
 		public string Message
