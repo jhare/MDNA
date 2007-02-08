@@ -1,0 +1,334 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{291D1A98-5D71-438A-AF95-83F27FF60598}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "mdnaEngine.dll"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "mdnaEngine.dll"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.XML"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.3DAnalyst"
+                    AssemblyName = "ESRI.ArcGIS.3DAnalyst"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.3DAnalyst.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.ArcCatalogUI"
+                    AssemblyName = "ESRI.ArcGIS.ArcCatalogUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.ArcCatalogUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.ArcMap"
+                    AssemblyName = "ESRI.ArcGIS.ArcMap"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.ArcMap.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.ArcMapUI"
+                    AssemblyName = "ESRI.ArcGIS.ArcMapUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.ArcMapUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.ArcScan"
+                    AssemblyName = "ESRI.ArcGIS.ArcScan"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.ArcScan.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Carto"
+                    AssemblyName = "ESRI.ArcGIS.Carto"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Carto.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.CartoUI"
+                    AssemblyName = "ESRI.ArcGIS.CartoUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.CartoUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Catalog"
+                    AssemblyName = "ESRI.ArcGIS.Catalog"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Catalog.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.CatalogUI"
+                    AssemblyName = "ESRI.ArcGIS.CatalogUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.CatalogUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.DataSourcesFile"
+                    AssemblyName = "ESRI.ArcGIS.DataSourcesFile"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.DataSourcesFile.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.DataSourcesGDB"
+                    AssemblyName = "ESRI.ArcGIS.DataSourcesGDB"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.DataSourcesGDB.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.DataSourcesOleDB"
+                    AssemblyName = "ESRI.ArcGIS.DataSourcesOleDB"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.DataSourcesOleDB.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.DataSourcesRaster"
+                    AssemblyName = "ESRI.ArcGIS.DataSourcesRaster"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.DataSourcesRaster.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.DataSourcesRasterUI"
+                    AssemblyName = "ESRI.ArcGIS.DataSourcesRasterUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.DataSourcesRasterUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Display"
+                    AssemblyName = "ESRI.ArcGIS.Display"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Display.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.DisplayUI"
+                    AssemblyName = "ESRI.ArcGIS.DisplayUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.DisplayUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Editor"
+                    AssemblyName = "ESRI.ArcGIS.Editor"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Editor.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.EditorExt"
+                    AssemblyName = "ESRI.ArcGIS.EditorExt"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.EditorExt.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Framework"
+                    AssemblyName = "ESRI.ArcGIS.Framework"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Framework.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoAnalyst"
+                    AssemblyName = "ESRI.ArcGIS.GeoAnalyst"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoAnalyst.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoDatabase"
+                    AssemblyName = "ESRI.ArcGIS.GeoDatabase"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoDatabase.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoDatabaseDistributed"
+                    AssemblyName = "ESRI.ArcGIS.GeoDatabaseDistributed"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoDatabaseDistributed.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoDatabaseDistributedUI"
+                    AssemblyName = "ESRI.ArcGIS.GeoDatabaseDistributedUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoDatabaseDistributedUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoDatabaseUI"
+                    AssemblyName = "ESRI.ArcGIS.GeoDatabaseUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoDatabaseUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Geometry"
+                    AssemblyName = "ESRI.ArcGIS.Geometry"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Geometry.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Geoprocessing"
+                    AssemblyName = "ESRI.ArcGIS.Geoprocessing"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Geoprocessing.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoStatisticalAnalyst"
+                    AssemblyName = "ESRI.ArcGIS.GeoStatisticalAnalyst"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoStatisticalAnalyst.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.GeoStatisticalAnalystUI"
+                    AssemblyName = "ESRI.ArcGIS.GeoStatisticalAnalystUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.GeoStatisticalAnalystUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Location"
+                    AssemblyName = "ESRI.ArcGIS.Location"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Location.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.LocationUI"
+                    AssemblyName = "ESRI.ArcGIS.LocationUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.LocationUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.NetworkAnalysis"
+                    AssemblyName = "ESRI.ArcGIS.NetworkAnalysis"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.NetworkAnalysis.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.NetworkAnalyst"
+                    AssemblyName = "ESRI.ArcGIS.NetworkAnalyst"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.NetworkAnalyst.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Output"
+                    AssemblyName = "ESRI.ArcGIS.Output"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Output.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.OutputUI"
+                    AssemblyName = "ESRI.ArcGIS.OutputUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.OutputUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.SpatialAnalyst"
+                    AssemblyName = "ESRI.ArcGIS.SpatialAnalyst"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.SpatialAnalyst.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.SpatialAnalystUI"
+                    AssemblyName = "ESRI.ArcGIS.SpatialAnalystUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.SpatialAnalystUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.System"
+                    AssemblyName = "ESRI.ArcGIS.System"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.System.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.SystemUI"
+                    AssemblyName = "ESRI.ArcGIS.SystemUI"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.SystemUI.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+                <Reference
+                    Name = "ESRI.ArcGIS.Utility"
+                    AssemblyName = "ESRI.ArcGIS.Utility"
+                    HintPath = "..\..\..\Program Files\ArcGIS\DotNet\ESRI.ArcGIS.Utility.dll"
+                    AssemblyFolderKey = "hklm\dn\arcgis desktop"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Engine.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
