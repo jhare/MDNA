@@ -76,7 +76,7 @@
                 />
                 <Reference
                     Name = "System.XML"
-                    AssemblyName = "System.XML"
+                    AssemblyName = "System.Xml"
                     HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
                 />
                 <Reference
@@ -84,6 +84,108 @@
                     AssemblyName = "Oracle.DataAccess"
                     HintPath = "..\..\..\oracle\product\10.2.0\client_2\odp.net\bin\1.x\Oracle.DataAccess.dll"
                     AssemblyFolderKey = "hklm\odp.net"
+                />
+                <Reference
+                    Name = "nunit-console-runner"
+                    AssemblyName = "nunit-console-runner"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit-console-runner.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit-console.tests"
+                    AssemblyName = "nunit-console.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit-console.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit-gui-runner"
+                    AssemblyName = "nunit-gui-runner"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit-gui-runner.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit-gui.tests"
+                    AssemblyName = "nunit-gui.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit-gui.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit-test-server"
+                    AssemblyName = "nunit-test-server"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit-test-server.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.core"
+                    AssemblyName = "nunit.core"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.core.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.core.extensions"
+                    AssemblyName = "nunit.core.extensions"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.core.extensions.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.extensions.tests"
+                    AssemblyName = "nunit.extensions.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.extensions.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.framework"
+                    AssemblyName = "nunit.framework"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.framework.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.framework.tests"
+                    AssemblyName = "nunit.framework.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.framework.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.mocks"
+                    AssemblyName = "nunit.mocks"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.mocks.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.mocks.tests"
+                    AssemblyName = "nunit.mocks.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.mocks.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.testutilities"
+                    AssemblyName = "nunit.testutilities"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.testutilities.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.uikit"
+                    AssemblyName = "nunit.uikit"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.uikit.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.uikit.tests"
+                    AssemblyName = "nunit.uikit.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.uikit.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.util"
+                    AssemblyName = "nunit.util"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.util.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
+                />
+                <Reference
+                    Name = "nunit.util.tests"
+                    AssemblyName = "nunit.util.tests"
+                    HintPath = "..\..\..\Program Files\NUnit 2.2.9\bin\nunit.util.tests.dll"
+                    AssemblyFolderKey = "hklm\dn\nunit 2.2.9"
                 />
             </References>
         </Build>
@@ -96,6 +198,31 @@
                 />
                 <File
                     RelPath = "DataHandler.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OracleHandler.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SDEHandler.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tests\DataHandlerTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tests\OracleHandlerTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tests\SDEHandler.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
