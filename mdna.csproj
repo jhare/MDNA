@@ -453,6 +453,11 @@
                     BuildAction = "Compile"
                 />
                 <File
+                    RelPath = "CollarReplaceCmd.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
                     RelPath = "DoAllCmd.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
