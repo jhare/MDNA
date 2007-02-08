@@ -8,7 +8,7 @@ using ESRI.ArcGIS.SystemUI;
 using ESRI.ArcGIS.ArcMap;
 using ESRI.ArcGIS.esriSystem;
 
-namespace mdnaEngine.dll
+namespace mdnaEngine
 {
 	/// <summary>
 	/// Summary description for Engine.
