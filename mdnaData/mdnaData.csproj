@@ -222,11 +222,6 @@
                     BuildAction = "Compile"
                 />
                 <File
-                    RelPath = "Tests\DataHandlerTest.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
                     RelPath = "Tests\OracleHandlerTest.cs"
                     SubType = "Code"
                     BuildAction = "Compile"

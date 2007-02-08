@@ -1,10 +1,12 @@
 using System;
+using NUnit.Framework;
 
 namespace mdnaData.Tests
 {
 	/// <summary>
 	/// Summary description for DataHandlerFactoryTest.
 	/// </summary>
+	[TestFixture]
 	public class DataHandlerFactoryTest
 	{
 		public DataHandlerFactoryTest()
@@ -13,5 +15,40 @@ namespace mdnaData.Tests
 			// TODO: Add constructor logic here
 			//
 		}
+
+		#region Tests
+
+		[Test]
+		public void CreateAFactory()
+		{
+			DataHandlerFactory factory = new DataHandlerFactory();
+
+			Assert.AreNotEqual( null, factory );
+		}
+
+		[Test]
+		public void Create_ReturnAnOracleHandler()
+		{
+			DataHandlerFactory factory = new DataHandlerFactory();
+			IDataHandler myHandler = factory.Create( "OracleHandler" );
+
+
+		}
+		#endregion
+
+		
+		#region SetUp and TearDown
+
+		[TestFixtureSetUp]
+		public void SetUp()
+		{
+		}
+
+		[TestFixtureTearDown]
+		public void TearDown()
+		{
+		}
+
+		#endregion
 	}
 }
