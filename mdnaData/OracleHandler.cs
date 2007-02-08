@@ -5,7 +5,7 @@ namespace mdnaData
 	/// <summary>
 	/// Summary description for OracleHandler.
 	/// </summary>
-	public class OracleHandler : DataHandler
+	public class OracleHandler : IDataHandler
 	{
 		public OracleHandler()
 		{

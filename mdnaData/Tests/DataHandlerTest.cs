@@ -28,5 +28,7 @@ namespace mdnaData.Tests
 		public void TearDown()
 		{
 		}
+
+		#endregion
 	}
 }

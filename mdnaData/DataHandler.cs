@@ -6,13 +6,8 @@ namespace mdnaData
 	/// <summary>
 	/// Summary description for DataHandler.
 	/// </summary>
-	public class DataHandler
+	interface IDataHandler
 	{
-		public DataHandler()
-		{
-			//
-			// TODO: Add constructor logic here
-			//
-		}
+
 	}
 }
