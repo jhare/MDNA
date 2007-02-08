@@ -438,6 +438,16 @@
                     Project = "{F45BF8AA-B3CD-4404-851D-E466DB4D81F1}"
                     Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
                 />
+                <Reference
+                    Name = "mdnaData"
+                    Project = "{A06AB604-BF4E-4747-9C84-5AEA70A8417B}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "mdnaEngine"
+                    Project = "{45EBA435-F080-4637-97AD-0B91199088A3}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
             </References>
         </Build>
         <Files>
