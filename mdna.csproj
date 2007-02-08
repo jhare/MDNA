@@ -463,6 +463,11 @@
                     BuildAction = "Compile"
                 />
                 <File
+                    RelPath = "Delegator.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
                     RelPath = "DoAllCmd.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
@@ -489,6 +494,11 @@
                 />
                 <File
                     RelPath = "Test\AppTest.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\DelegatorTest.cs"
                     SubType = "Code"
                     BuildAction = "Compile"
                 />
