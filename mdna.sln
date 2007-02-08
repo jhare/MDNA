@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdnaData", "mdnaData\mdnaDa
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mdnaEngine", "mdnaEngine\mdnaEngine.csproj", "{45EBA435-F080-4637-97AD-0B91199088A3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfiguration) = preSolution
 		Debug = Debug
@@ -29,6 +33,10 @@ Global
 		{A06AB604-BF4E-4747-9C84-5AEA70A8417B}.Debug.Build.0 = Debug|.NET
 		{A06AB604-BF4E-4747-9C84-5AEA70A8417B}.Release.ActiveCfg = Release|.NET
 		{A06AB604-BF4E-4747-9C84-5AEA70A8417B}.Release.Build.0 = Release|.NET
+		{45EBA435-F080-4637-97AD-0B91199088A3}.Debug.ActiveCfg = Debug|.NET
+		{45EBA435-F080-4637-97AD-0B91199088A3}.Debug.Build.0 = Debug|.NET
+		{45EBA435-F080-4637-97AD-0B91199088A3}.Release.ActiveCfg = Release|.NET
+		{45EBA435-F080-4637-97AD-0B91199088A3}.Release.Build.0 = Release|.NET
 	EndGlobalSection
 	GlobalSection(SolutionItems) = postSolution
 		oldcpp\Server.cpp = oldcpp\Server.cpp
