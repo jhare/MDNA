@@ -8,6 +8,6 @@ namespace mdnaData
 	/// </summary>
 	interface IDataHandler
 	{
-		const string HandlerID();
+		string HandlerClassID();
 	}
 }

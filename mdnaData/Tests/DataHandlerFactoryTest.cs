@@ -19,7 +19,7 @@ namespace mdnaData.Tests
 		#region Tests
 
 		[Test]
-		public void CreateAFactory()
+		public void InstantiateAFactory()
 		{
 			DataHandlerFactory factory = new DataHandlerFactory();
 
@@ -32,7 +32,7 @@ namespace mdnaData.Tests
 			DataHandlerFactory factory = new DataHandlerFactory();
 			IDataHandler myHandler = factory.Create( "OracleHandler" );
 
-
+            Assert.AreEqual( "OracleHandler", myHandler.HandlerClassID() );
 		}
 		#endregion
 

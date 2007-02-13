@@ -5,7 +5,7 @@ namespace mdnaData
 	/// <summary>
 	/// Summary description for SDEHandler.
 	/// </summary>
-	public class SDEHandler : IDataHandler
+	public class SDEHandler
 	{
 		public SDEHandler()
 		{
