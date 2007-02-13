@@ -6,23 +6,22 @@ namespace mdnaData.Tests
 	/// <summary>
 	/// Summary description for DataHandlerFactoryTest.
 	/// </summary>
+
 	[TestFixture]
 	public class DataHandlerFactoryTest
 	{
 		public DataHandlerFactoryTest()
 		{
-			//
-			// TODO: Add constructor logic here
-			//
+			
 		}
-
+  
 		#region Tests
 
 		[Test]
 		public void InstantiateAFactory()
 		{
 			DataHandlerFactory factory = new DataHandlerFactory();
-
+	
 			Assert.AreNotEqual( null, factory );
 		}
 
